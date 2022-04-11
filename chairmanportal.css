@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+body{
+	background:#e3f2fd;
+}
+.wrapper .sidebar{
+	background: rgb(42, 187, 200);
+	position: relative;
+	top:-30;
+	left: 0;
+	width: 300px;
+	height: 400px;
+	padding: 20px 0;
+	transition: all 0.5s ease;
+    margin-top:-50px ;
+    z-index:1 ;
+    border: 2px solid rgb(0, 83, 131);
+}
+.wrapper .sidebar ul li a{
+	display: block;
+	padding: 13px 30px;
+	border-bottom: 1px solid #10558d;
+	color: rgb(241, 237, 237);
+	font-size: 16px;
+	position: relative;
+}
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+	color: #0c7db1;
+
+	background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+	display: block;
+}
+.wrapper .section{
+	width: calc(100% - 225px);
+	margin-left: 300px;
+	transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar{
+	background: #0f7be7;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+    margin-right: -55px;
+    transition: 0.5s ease;
+	width: 80vw;
+}
+
+.hamburger{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.hamburger h1{
+    margin-left: 15px;
+}
+.hamburger a{
+	font-size: 28px;
+	color: #f4fbff;
+    margin-left: -10px;
+}
+ .hamburger a i:hover
+{
+	color: #a2ecff;
+}
+.navbar-form{
+    display: flex;
+    margin-left: 400px;
+    transition: 0.5s ease;
+}
+
+.wrapper{
+	width: 90vw;
+}
+.form-group input{
+    width: 300px; height: 50px; padding-left: 20px;font-size: 20px;margin-right: 2px;
+}
+.navbar-form button{
+    width: 50px; height: 50px; background: rgb(42, 187, 200); border-radius: 8px;
+}
+#forms{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.main_content{
+margin-top: -20%;
+margin-left: 20px;
+position: absolute;
+transition: 0.5s ease;
+}
+
+body.active .main_content{
+    margin-top: -20%;
+    margin-left: 20px;
+    transition: 0.5s ease;
+    z-index: -1;
+}
+body.active .wrapper .sidebar{
+	left: -300px;
+    transition: 0.5s ease;
+}
+body.active .wrapper .section{
+	margin-left: 0;
+    transition: 0.5s ease;
+}
+body.active .wrapper .section .top_navbar{
+	width: 100vw;
+}
+body.active .navbar-form{
+    margin-left: 700px;
+    transition: 0.5s ease;
+}
+
+.wrapper1{
+    padding-top: 30px;
+    width: 50vw;
+    margin-left: 370px;
+}
+.dpgcdet{
+    text-align: center;
+}
+.dpgcdet h1{
+    margin-bottom:20px;
+    border-bottom: 5px solid black;
+}
+.dpgc{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(109, 109, 109);
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+.dpgc img{
+    width: 80px;
+    border-radius: 90%;
+    margin-left: 20px;
+}
+.dpgc h2{
+    margin-left: 20px;
+}
+.studentdet{
+    text-align: center;
+}
+.studentdet h1{
+    margin-bottom:20px;
+    border-bottom: 5px solid black; 
+}
+.studentdet a{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(109, 109, 109);
+    text-decoration: none;
+    color: black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.studentdet a h2{
+    text-align: left;
+    margin-left: 20px;
+    font-weight: 200;
+}
+.studentdet a img{
+    width: 50px;
+    border-radius: 90%;
+    margin-left: 20px;
+}
+.footer1{
+   height: 50px; 
+   background-color: steelblue;
+   margin-top: 400px;
+   width: 100vw;
+   text-align: center;
+   padding-top: 10px;
+   color: white;
+}
+@media screen and (max-width:400px) and (min-width:200px){
+    .wrapper1{
+        width: 70vw;
+    }
+    .studentdet a img{
+        margin-left: -20px;
+    }
+    .main_content{
+		margin-left: -150px;
+        margin-top: -350px;
+	}
+	.wrapper .section .top_navbar{
+        width: 370px;
+        margin-left: -120px;
+        padding-bottom: 80px;
+        padding-top: 30px;
+    }
+    .wrapper .sidebar{
+        width: 180px;
+        top:-80;
+    }
+    .hamburger h1{
+        margin-left: 15px;
+        font-size: 15px;
+    }
+    .navbar-form{
+        margin-left: 20px;
+    }
+    .form-group input{
+        width: 250px;
+        height: 30px;
+        margin-top: 100px;
+        margin-left: -250px;
+    }
+    .navbar-form button{
+        height: 30px;
+        margin-top: 100px;
+    }
+    .footer1{
+        width: 150vw;
+       padding-bottom: 50px;
+       margin-top: 800px;
+    }
+    body.active .main_content{
+        margin-top: -90%;
+        margin-left: -330px;
+        transition: 0.5s ease;
+        z-index: -1;
+    }
+    body.active .wrapper .sidebar{
+        left: -180px;
+        transition: 0.5s ease;
+    }
+    body.active .wrapper .section{
+        margin-left: 0;
+        transition: 0.5s ease;
+    }
+    body.active .wrapper .section .top_navbar{
+        width: 100vw;
+        margin-left: 0px;
+    }
+    body.active .navbar-form{
+        margin-left: 100px;
+        margin-top: 10px;
+        transition: 0.5s ease;
+    }
+    body.active .footer1{
+        width: 100vw;
+        margin-top: 400px;
+    }
+}
+
+@media screen and (max-width:600px) and (min-width:401px){
+    .wrapper1{
+        width: 50vw;
+    }
+    .studentdet a img{
+        margin-left: -20px;
+    }
+    .main_content{
+		margin-left: -150px;
+        margin-top: -350px;
+	}
+	.wrapper .section .top_navbar{
+        width: 430px;
+        margin-left: -120px;
+        padding-bottom: 80px;
+        padding-top: 30px;
+    }
+    .wrapper .sidebar{
+        width: 180px;
+        top:-80;
+    }
+    .hamburger h1{
+        margin-left: 15px;
+        font-size: 15px;
+    }
+    .navbar-form{
+        margin-left: 20px;
+    }
+    .form-group input{
+        width: 250px;
+        height: 30px;
+        margin-top: 100px;
+        margin-left: -250px;
+    }
+    .navbar-form button{
+        height: 30px;
+        margin-top: 100px;
+    }
+    .footer1{
+        width: 100vw;
+       padding-bottom: 180px;
+    }
+    body.active .main_content{
+        margin-top: -55%;
+        margin-left: -330px;
+        transition: 0.5s ease;
+        z-index: -1;
+    }
+    body.active .wrapper .sidebar{
+        left: -180px;
+        transition: 0.5s ease;
+    }
+    body.active .wrapper .section{
+        margin-left: 0;
+        transition: 0.5s ease;
+    }
+    body.active .wrapper .section .top_navbar{
+        width: 100vw;
+        margin-left: 0px;
+    }
+    body.active .navbar-form{
+        margin-left: 100px;
+        margin-top: 10px;
+        transition: 0.5s ease;
+    }
+    body.active .footer1{
+        width: 100vw;
+    }
+}
+@media screen and (max-width:414px) and (min-width:411px){
+    .footer1{
+        width: 100vw;
+       padding-bottom: 250px;
+    }
+    body.active .main_content{
+        margin-top: -80%;
+        
+    }
+}
+@media screen and (max-width:800px) and (min-width:601px){
+    .wrapper1{
+        width: 50vw;
+    }
+    .studentdet a img{
+        margin-left: -20px;
+    }
+    .main_content{
+		margin-left: -150px;
+        margin-top: -350px;
+	}
+	.wrapper .section .top_navbar{
+        width: 600px;
+        margin-left: -120px;
+        padding-bottom: 80px;
+        padding-top: 30px;
+    }
+    .wrapper .sidebar{
+        width: 180px;
+        top:-80;
+    }
+    .hamburger h1{
+        margin-left: 15px;
+        font-size: 15px;
+    }
+    .navbar-form{
+        margin-left: 20px;
+    }
+    .form-group input{
+        width: 250px;
+        height: 30px;
+        margin-top: 100px;
+        margin-left: -250px;
+    }
+    .navbar-form button{
+        height: 30px;
+        margin-top: 100px;
+    }
+    .footer1{
+        width: 100vw;
+       padding-bottom: 100px;
+       margin-top: 800px;
+    }
+    body.active .main_content{
+        margin-top: -45%;
+        margin-left: -330px;
+        transition: 0.5s ease;
+        z-index: -1;
+    }
+    body.active .wrapper .sidebar{
+        left: -180px;
+        transition: 0.5s ease;
+    }
+    body.active .wrapper .section{
+        margin-left: 0;
+        transition: 0.5s ease;
+    }
+    body.active .wrapper .section .top_navbar{
+        width: 100vw;
+        margin-left: 0px;
+    }
+    body.active .navbar-form{
+        margin-left: 100px;
+        margin-top: 10px;
+        transition: 0.5s ease;
+    }
+    body.active .footer1{
+        width: 100vw;
+        margin-top: 800px;
+    }
+}
+@media screen and (max-width:1000px) and (min-width:801px){
+    .wrapper1{
+        width: 50vw;
+    }
+    .studentdet a img{
+        margin-left: -20px;
+    }
+    .main_content{
+		margin-left: -150px;
+        margin-top: -350px;
+	}
+	.wrapper .section .top_navbar{
+        width: 540px;
+        margin-left: -120px;
+        padding-bottom: 80px;
+        padding-top: 30px;
+    }
+    .wrapper .sidebar{
+        width: 180px;
+        top:-80;
+    }
+    .hamburger h1{
+        margin-left: 15px;
+        font-size: 15px;
+    }
+    .navbar-form{
+        margin-left: 20px;
+    }
+    .form-group input{
+        width: 250px;
+        height: 30px;
+        margin-top: 100px;
+        margin-left: -250px;
+    }
+    .navbar-form button{
+        height: 30px;
+        margin-top: 100px;
+    }
+    .footer1{
+        width: 100vw;
+       padding-bottom: 100px;
+       margin-top: 600px;
+    }
+    body.active .main_content{
+        margin-top: -50%;
+        margin-left: -330px;
+        transition: 0.5s ease;
+        z-index: -1;
+    }
+    body.active .wrapper .sidebar{
+        left: -180px;
+        transition: 0.5s ease;
+    }
+    body.active .wrapper .section{
+        margin-left: 0;
+        transition: 0.5s ease;
+    }
+    body.active .wrapper .section .top_navbar{
+        width: 100vw;
+        margin-left: 0px;
+    }
+    body.active .navbar-form{
+        margin-left: 100px;
+        margin-top: 10px;
+        transition: 0.5s ease;
+    }
+    body.active .footer1{
+        width: 100vw;
+        margin-top: 600px;
+    }
+}
+
+@media  screen and (max-width:1180px) and (min-width:1000px) {
+    .wrapper1{
+        width: 50vw;
+    }
+    .studentdet a img{
+        margin-left: -20px;
+    }
+    .main_content{
+		margin-left: -150px;
+        margin-top: -350px;
+	}
+	.wrapper .section .top_navbar{
+        width: 850px;
+        margin-left: -120px;
+        padding-bottom: 80px;
+        padding-top: 30px;
+    }
+    .wrapper .sidebar{
+        width: 180px;
+        top:-80;
+    }
+    .hamburger h1{
+        margin-left: 15px;
+        font-size: 15px;
+    }
+    .navbar-form{
+        margin-left: 20px;
+    }
+    .form-group input{
+        width: 250px;
+        height: 30px;
+        margin-top: 100px;
+        margin-left: -250px;
+    }
+    .navbar-form button{
+        height: 30px;
+        margin-top: 100px;
+    }
+    .footer1{
+        width: 100vw;
+       padding-bottom: 100px;
+       margin-top: 600px;
+    }
+    body.active .main_content{
+        margin-top: -30%;
+        margin-left: -330px;
+        transition: 0.5s ease;
+        z-index: -1;
+    }
+    body.active .wrapper .sidebar{
+        left: -180px;
+        transition: 0.5s ease;
+    }
+    body.active .wrapper .section{
+        margin-left: 0;
+        transition: 0.5s ease;
+    }
+    body.active .wrapper .section .top_navbar{
+        width: 100vw;
+        margin-left: 0px;
+    }
+    body.active .navbar-form{
+        margin-left: 100px;
+        margin-top: 10px;
+        transition: 0.5s ease;
+    }
+    body.active .footer1{
+        width: 100vw;
+        margin-top: 600px;
+    }
+}
+@media  screen and (max-width:1280px) and (min-width:1181px) {
+    .wrapper1{
+        width: 50vw;
+    }
+    .studentdet a img{
+        margin-left: -20px;
+    }
+    .main_content{
+		margin-left: -150px;
+        margin-top: -350px;
+	}
+	.wrapper .section .top_navbar{
+        width: 1100px;
+        margin-left: -120px;
+        padding-bottom: 80px;
+        padding-top: 30px;
+    }
+    .wrapper .sidebar{
+        width: 180px;
+        top:-80;
+    }
+    .hamburger h1{
+        margin-left: 15px;
+        font-size: 15px;
+    }
+    .navbar-form{
+        margin-left: 20px;
+    }
+    .form-group input{
+        width: 250px;
+        height: 30px;
+        margin-top: 100px;
+        margin-left: -250px;
+    }
+    .navbar-form button{
+        height: 30px;
+        margin-top: 100px;
+    }
+    .footer1{
+        width: 100vw;
+       padding-bottom: 100px;
+       margin-top: 600px;
+    }
+    body.active .main_content{
+        margin-top: -25%;
+        margin-left: -330px;
+        transition: 0.5s ease;
+        z-index: -1;
+    }
+    body.active .wrapper .sidebar{
+        left: -180px;
+        transition: 0.5s ease;
+    }
+    body.active .wrapper .section{
+        margin-left: 0;
+        transition: 0.5s ease;
+    }
+    body.active .wrapper .section .top_navbar{
+        width: 100vw;
+        margin-left: 0px;
+    }
+    body.active .navbar-form{
+        margin-left: 100px;
+        margin-top: 10px;
+        transition: 0.5s ease;
+    }
+    body.active .footer1{
+        width: 100vw;
+        margin-top: 600px;
+    }
+}

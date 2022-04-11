@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="student_.css">
+    <title>Document</title>
+    
+</head>
+<body>
+   
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+             
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li id="forms"><img src="images/yash sati.jpeg" alt=""></li>
+                <li></li>
+                <li><a href="#" >RESULTS</a></li>
+                <li><a href="#">APPLY FOR PRESUBMISSION SEMINAR</a></li>
+                <li><a href="#">APPLY FOR COURSE WEAVIER</a></li>
+                <li><a href="#">SEMESTER REGISTRATION</a></li>
+                <li><a href="#">SEMESTER FEE PAYMENT</a></li>
+                <li><a href="#">ATTENDANCE</a></li>
+                <li><a href="#">TRACK PAYMENT DETAILS</a></li>
+                <li><a href="#">GENERATE RECIEPT</a></li>
+                <li><a href="#">DSC DETAILS</a></li>
+                <li><a href="#">ELIGIBILITY FOR COMPREHENSIVE EXAM</a></li>
+                <li><a href="#">ELIGIBILITY FOR RESEARCH PROPOSAL SEMINAR</a></li>
+            </ul>
+        </div>
+        <div class="main_content">
+            <div class="box" id="coursework"><h1>COURSE WORK DETAILS</h1>
+                <form>
+                    <label for="fileUpload">Upload file</label>
+                    <input type="file" id="fileUpload">
+                  </form>
+            </div>
+            <div class="box" id="mydocuments"><h1>MY Documents</h1>
+                <div class="row">
+                    <div class="co-column">
+                        <i class="far fa-address-book fa-3x" ></i><h2>Course Waiver</h2>
+                    </div>
+                    <div class="co-column">
+                        <i class="fas fa-money-check-alt fa-3x"></i><h2 id="pay">Fee Payment Details</h2>
+                    </div>
+                    <div class="co-column" >
+                        <i class="fas fa-receipt fa-3x"></i><h2 id="rec">Registration Receipt</h2>
+                    </div>
+        
+               </div>
+            
+            </div>
+            <div class="box" id="mydetails"><h1>MY Details</h1>
+               <div class="mydetailsele">
+                   <div class="mydetailsele1" id="res">
+                    <i class="fas fa-poll-h fa-2x"></i>&nbsp;&nbsp;<h2>Results</h2>
+                   </div>
+                   <div class="mydetailsele1" id="atten">
+                    <i class="fas fa-address-card fa-2x"></i>&nbsp;&nbsp;<h2>Attendence</h2>
+                    </div> 
+                    <div class="mydetailsele1" id="actions">
+                        <i class="fas fa-times fa-2x" style="color: red;"></i>&nbsp;&nbsp; <h2>Diciplinary Actions</h2>
+                     </div> 
+               </div>
+            </div>
+            <div class="box" id="details"><h1>DETAILS</h1>
+             <div class="detailsback">
+                <div class="imgdet"><img src="images/yash sati.jpeg" alt="My image"></div>
+                <div class="infooth" id="infooth2">
+                    <ul>
+                        <li>20JE0914</li>
+                        <li>Shivankar Mehta</li>
+                        <li>B.TECH</li>
+                        <li>20je0914@mech.iitism.ac.in</li>
+                    </ul>
+                </div>
+             </div>
+            </div>
+            <div class="box" id="otherdetails"><h1>OTHER DETAILS<h1>
+                <div class="otherdetailsback">
+                    <div class="infooth" id="infooth1">
+                        <ul>
+                            <li>20JE0914</li>
+                            <li>Shivankar Mehta</li>
+                            <li>B.TECH</li>
+                            <li>20je0914@mech.iitism.ac.in</li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+            
+        </div>
+       
+    </div>
+  <script>
+       var hamburger = document.querySelector(".hamburger");
+	hamburger.addEventListener("click", function(){
+		document.querySelector("body").classList.toggle("active");
+	})
+  </script>
+</body>
+</html>

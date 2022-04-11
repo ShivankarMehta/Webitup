@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    background-color:#0f7be7 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.box{
+    margin-top: 5%;
+    width: 70%;
+    height: 600px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0, 0, 0);
+    
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+img{
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 4px solid rgb(147, 147, 255);
+}
+.details ul{
+  margin-top:80px ;
+  margin-left: 150px;
+}
+.details ul li{
+    list-style: disc;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    
+}
+.button1{
+    padding: 20px 180px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    background-color: rgb(98, 98, 241);
+    color: white;
+}
+.button2{
+    padding: 20px 40px;
+    font-size: 40px;
+    background-color: rgb(98, 98, 241);
+    color: white;
+}
+@media screen and (max-width:400px) and (min-width:200px){
+    .box{
+        margin-top: 5%;
+        width: 90%;
+        height: 600px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgb(0, 0, 0);
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    img{
+        width: 100px;
+        margin-top: 20px;
+        margin-left: 30%;
+        border-radius: 10px;
+        border: 4px solid rgb(147, 147, 255);
+    } 
+    .details ul{
+        margin-top:30px ;
+        margin-left: 40px;
+      }
+      .details ul li{
+        list-style: disc;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }  
+    .button1{
+        padding: 20px 30px;
+        font-size: 15px;
+        margin-bottom: 20px;
+        background-color: rgb(98, 98, 241);
+        color: white;
+    }
+    .button2{
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px 10px;
+        font-size: 15px;
+        background-color: rgb(98, 98, 241);
+        color: white;
+    } 
+}
+
+@media screen and (max-width:600px) and (min-width:401px){
+    .box{
+        margin-top: 5%;
+        width: 90%;
+        height: 900px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgb(0, 0, 0);
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    img{
+        width: 200px;
+        margin-top: 20px;
+        margin-left: 10%;
+        border-radius: 10px;
+        border: 4px solid rgb(147, 147, 255);
+    } 
+    .details ul{
+        margin-top:30px ;
+        margin-left: 40px;
+      }
+      .details ul li{
+        list-style: disc;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }  
+    .button1{
+        padding: 20px 60px;
+        font-size: 15px;
+        margin-bottom: 20px;
+        background-color: rgb(98, 98, 241);
+        color: white;
+    }
+    .button2{
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px 10px;
+        font-size: 15px;
+        background-color: rgb(98, 98, 241);
+        color: white;
+    } 
+}
+@media screen and (max-width:800px) and (min-width:601px){
+    .box{
+        margin-top: 5%;
+        width: 90%;
+        height: 900px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgb(0, 0, 0);
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    img{
+        width: 400px;
+        margin-top: 20px;
+        margin-left: 10%;
+        border-radius: 10px;
+        border: 4px solid rgb(147, 147, 255);
+    } 
+    .details ul{
+        margin-top:30px ;
+        margin-left: 70px;
+      }
+      .details ul li{
+        list-style: disc;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }  
+    .button1{
+        padding: 20px 80px;
+        font-size: 20px;
+        margin-bottom: 20px;
+        background-color: rgb(98, 98, 241);
+        color: white;
+    }
+    .button2{
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px 10px;
+        font-size: 20px;
+        background-color: rgb(98, 98, 241);
+        color: white;
+    } 
+}
+@media screen and (max-width:1280px) and (min-width:801px){
+    .box{
+        margin-top: 5%;
+        width: 90%;
+        height: 900px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgb(0, 0, 0);
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    img{
+        width: 400px;
+        margin-top: 20px;
+        margin-left: 10%;
+        border-radius: 10px;
+        border: 4px solid rgb(147, 147, 255);
+    } 
+    .details ul{
+        margin-top:30px ;
+        margin-left: 100px;
+      }
+      .details ul li{
+        list-style: disc;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }  
+    .button1{
+        padding: 20px 80px;
+        font-size: 20px;
+        margin-bottom: 20px;
+        background-color: rgb(98, 98, 241);
+        color: white;
+    }
+    .button2{
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px 10px;
+        font-size: 20px;
+        background-color: rgb(98, 98, 241);
+        color: white;
+    } 
+}

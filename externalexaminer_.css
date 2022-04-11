@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(5, 68, 104);
+}
+.wrapper{
+    padding: 10px;
+}
+.three{
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thesis{
+    width: 300px;
+    height: 150px;
+   background-color: white;
+   text-align: center;
+   margin-left: 100px;
+   margin-right: 100px;
+   padding: 40px 20px;
+   border-radius: 10px;
+   transition: 0.5s;
+   border: 4px solid rgb(28, 193, 243);
+}
+.thesis p{
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color:rgb(5, 68, 104) ;
+    transition: 0.5s;
+    margin-top: 15px;
+}
+.thesis:hover{
+    background-color: rgb(7, 105, 185);
+    border: 4px solid white;
+}
+.thesis:hover p{
+    color: white;
+}
+.fas{
+    color: rgb(5, 68, 104);
+}
+.thesis:hover .fas{
+    color: white;
+}
+.notification{
+    background-color: white;
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    border-radius: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+    padding-top:10px ;
+    border: 4px solid rgb(28, 193, 243);
+    transition: 0.2s;
+}
+.notification p{
+    font-size: 30px;
+    font-weight: 900;
+    color:rgb(5, 68, 104) ;
+    transition: 0.2s;
+}
+.notification:hover{
+    background-color:rgb(7, 105, 185) ;
+}
+.notification:hover p{
+    color: white;
+}
+.notification:hover .fas{
+    color: white;
+}
+
+.dateext{
+    background-color: white;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    border-radius: 40px;
+    margin-left: 1000px;
+    margin-top: -70px;
+    padding-top:10px ;
+    border: 4px solid rgb(28, 193, 243); 
+    transition: 0.2s;
+}
+.dateext p{
+    font-size: 30px;
+    font-weight: 900;
+    color:rgb(5, 68, 104) ;
+    transition: 0.2s;
+}
+.dateext:hover{
+    background-color:rgb(7, 105, 185) ;
+}
+.dateext:hover p{
+    color: white;
+}
+.dateext:hover .fas{
+    color: white;
+}
+.footer{
+    text-align: center;
+    margin-top: 180px;
+    color: white;
+}
+@media screen and (max-width:400px) and (min-width:200px){
+    .three{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .thesis{
+        width: 150px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    .thesis p{
+        font-size: 15px;
+    }
+    .notification{
+       width: 200px;
+       border-radius: 30px;
+    }
+    .notification p{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .dateext{
+        width: 200px;
+       border-radius: 30px;
+       padding-top: 10px;
+       margin-left: 40px;
+    margin-top: 10px; 
+    }
+    .dateext p{
+        font-size: 20px;
+    }
+    .footer{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:600px) and (min-width:400px){
+    .three{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .thesis{
+        width: 250px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    .thesis p{
+        font-size: 20px;
+    }
+    .notification{
+       width: 300px;
+       border-radius: 30px;
+       margin-left: 130px;
+    }
+    .notification p{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .dateext{
+        width: 300px;
+       border-radius: 35px;
+       padding-top: 20px;
+       margin-left: 130px;
+    margin-top: 10px; 
+    }
+    .dateext p{
+        font-size: 20px;
+    }
+    .footer{
+        margin-top: 80px;
+    }
+}
+@media screen and (max-width:1280px) and (min-width:600px){
+    .three{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .thesis{
+        width: 250px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    .thesis p{
+        font-size: 20px;
+    }
+    .notification{
+       width: 300px;
+       border-radius: 30px;
+       margin-left: 130px;
+    }
+    .notification p{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .dateext{
+        width: 300px;
+       border-radius: 35px;
+       padding-top: 20px;
+       margin-left: 130px;
+    margin-top: 10px; 
+    }
+    .dateext p{
+        font-size: 20px;
+    }
+    .footer{
+        margin-top: 80px;
+    }
+}
+@media  screen and (max-width:414px) and (min-width:411px){
+    .notification{
+        margin-left: 40px;
+    }
+    .dateext{
+        margin-left: 40px;
+    }
+}

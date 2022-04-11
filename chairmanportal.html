@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chairmanportal.css">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+   
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <h1>Chairman Examination Board</h1>
+                </div>
+                <form class="navbar-form " role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Find Scholars">
+                    </div>
+                    <button type="submit" class="btn btn-info">Go</button>
+                  </form>
+            </div>
+             
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li id="forms"><b>Chairman Examination Board Members</b></li>
+                <li><a href="#" >FORMATION OF DSC</a></li>
+                <li><a href="#">LIST OF COURSES</a></li>
+                <li><a href="#">COMPREHENSIVE EXAM REPORT</a></li>
+            </ul>
+        </div>
+        <div class="main_content">
+            <div class="wrapper1">
+                <div class="studentdet">
+                    <h1>Scholars</h1>
+                    <div class="scholars">
+                       <a href="#"><img src="images/Virat_Kohli_T20_PTI.jpg" alt=""><h2>20JE0914</h2></a>
+                       
+                       
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="footer1"> copyright&copy;IITISM   </div>
+  <script>
+       var hamburger = document.querySelector(".hamburger");
+	hamburger.addEventListener("click", function(){
+		document.querySelector("body").classList.toggle("active");
+	})
+  </script>
+</body>
+</html>

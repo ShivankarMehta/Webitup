@@ -1,0 +1,654 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background: #f5f6fa;
+}
+
+input[type=file]::file-selector-button {
+    border: 2px solid #6c5ce7;
+    padding: .2em .4em;
+    border-radius: .2em;
+    background-color: #a29bfe;
+    transition: 1s;
+    width: 200px;
+    padding: 10px;
+    margin-top: 40px;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background-color: #81ecec;
+    border: 2px solid #00cec9;
+  }
+
+.wrapper .sidebar{
+	background: rgb(5, 68, 104);
+	position: relative;
+	top:0;
+	left: 0;
+	width: 300px;
+	height: 1600px;
+	padding: 20px 0;
+	transition: all 0.5s ease;
+    margin-top: -50px;
+    border-bottom: 50px solid #10558d;
+}
+
+.wrapper .sidebar ul li a{
+	display: block;
+	padding: 13px 30px;
+	border-bottom: 1px solid #10558d;
+	color: rgb(241, 237, 237);
+	font-size: 16px;
+	position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+	color: #dee4ec;
+	width: 30px;
+	display: inline-block;
+}
+
+ 
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+	color: #0c7db1;
+
+	background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+	color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+	display: block;
+}
+
+.wrapper .section{
+	width: calc(100% - 225px);
+	margin-left: 300px;
+	transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar{
+	background: rgb(7, 105, 185);
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+    width: 100vw;
+    margin-left:0px;
+}
+
+.wrapper .section .top_navbar .hamburger a{
+	font-size: 28px;
+	color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover{
+	color: #a2ecff;
+}
+
+ 
+
+body.active .wrapper .sidebar{
+	left: -300px;
+    transition: 0.5s ease;
+}
+
+body.active .wrapper .section{
+	margin-left: 0;
+	width: 100%;
+    transition: 0.5s ease;
+}
+
+body.active .main_content{
+    margin-left: 80px;
+    transition: 0.5s ease;
+}
+#forms img{
+    width: 200px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.main_content{
+    position: absolute;
+    width: 70vw;
+    margin-left: 400px;
+    margin-top: -1500px;
+    padding: 30px;
+    margin-bottom: 50px;
+    transition: 0.5s ease;
+}
+.box{
+    height: 30vh;
+    text-align: center;
+}
+
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    margin-left:10px;
+    margin-top: 30px;
+}
+
+.co-column{
+    position: relative;
+    flex-basis: 31%;
+    background: rgb(138, 222, 236);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.5s;
+    height: 160px;
+    padding-top: 45px;
+    padding-left: 50px;
+
+}
+
+.co-column i{
+    margin-right: 50px;
+    margin-top: -20px;
+}
+.co-column h2{
+margin-right: 40px;
+margin-top: 10px;
+}
+.co-column:hover{
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.4);
+}
+#mydocuments{
+    height: 35vh;
+}
+
+.mydetailsele{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.mydetailsele1{
+   width: 400px;
+   height: 80px;
+   background-color:  rgb(47, 198, 224);
+   border-radius: 10px;
+   color: #fff;
+   transition: 0.5s;
+   display: flex;
+   margin: 40px 80px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+.mydetailsele1:hover{
+    box-shadow: 0 0 60px 0 rgba(7, 22, 238, 0.2);
+    background-color: white;;
+    color:rgb(47, 198, 224) ;
+}
+.mydetailsele1:hover .fas{
+    color:rgb(47, 198, 224) ;
+}
+#res{
+    padding-top: 25px;
+    
+}
+#atten{
+    padding-top: 25px;
+}
+#actions{
+    padding-top: 10px;
+}
+
+#mydetails{
+    height: 25vh;
+}
+
+.detailsback{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    padding-right:300px ;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.imgdet img{
+ width: 200px;
+ border-radius: 10px;
+}
+.detailsback:hover{
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.2);
+}
+
+.infodet h2{
+    display: flex;    
+    flex-direction: column;
+    margin-left: 250px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.otherdetailsback{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-left: 80px;
+    margin-right:90px ;
+    margin-top: 40px;
+    height: 200px;
+    
+}
+
+.infooth{
+    color: black;
+    font-size: 15px;
+    padding-left: 200px;
+}
+.infooth ul li{
+    list-style-type: disc;
+    text-align: left;
+    font-size: 20px;
+}
+   .otherdetailsback:hover{
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.2);
+}
+#otherdetails{
+    height:20%;
+}
+#details{
+    height: 33%;
+}
+#mydocuments{
+height: 20%;
+}
+#mydetails{
+   height: 10%;
+}
+
+.footer{
+    position: relative;
+    text-align: center;
+    margin-top: -40px;
+    }
+
+@media screen and (max-width:400px) and (min-width:200px){
+    #infooth2 ul{
+      margin-left: -150px;
+    }
+    #infooth2 ul li{
+        font-size: 15px;
+    }
+    #infooth1 ul{
+        margin-left: -300px;
+    }
+    #infooth1 ul li{
+        font-size: 15px;
+    }
+    #forms img{
+        width: 100px;
+    }
+    .imgdet img{
+        width: 100px;
+    }
+    .wrapper .sidebar{
+        width:170px ;
+        margin-bottom: -50px;
+    }
+    .wrapper .sidebar ul li a{
+        font-size: 10px;
+    }
+    .wrapper .section{
+        margin-left: 170px;
+    }
+
+    .main_content{
+        width: 50vw;
+        margin-left: 200px;
+        margin-top: -1550px;
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+
+    h1{
+        font-size: 15px;
+        margin-left: 50px;
+        
+    }
+   
+    .row{
+        display: flex;
+        flex-direction: column;
+        margin-left: -10px;
+    }
+    .co-column{
+        width: 200px;
+        height: 100px;
+        padding-top: 45px;
+        padding-left: 50px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    
+    }
+
+    .co-column i{
+        margin-right: 50px;
+        margin-top: -30px;
+    }
+    .co-column h2{
+        font-size: 10px;
+    margin-right: 40px;
+    margin-top: 2px;
+    }
+    .mydetailsele{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        margin-left: 50px;
+        margin-bottom: -50px;
+    }
+    .mydetailsele1{
+       width: 200px;
+       height: 80px;
+       margin-top: -20px;
+       height: 80px;
+    }
+    .otherdetailsback{
+        width: 250px;
+        margin-left: -50px;
+        margin-top: 10px;
+    }
+    .detailsback{
+        display: flex;
+        flex-direction: column;
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-top: 30px;
+        padding-right:200px ;
+        margin-bottom: 30px;
+    }
+    .infodet h2{
+        font-size: 15px;
+        margin-left: 150px;
+    }
+    .imgdet img{
+        margin-left: 150px;
+        margin-bottom: 20px;
+    }
+    .infooth{
+        color: black;
+        font-size: 15px;
+        margin-left: 150px;
+    }
+    .infooth h2{
+        font-size: 15px;
+        margin-left: -450px;
+       }
+       .footer{
+        margin-left: 250px;
+        margin-top: 100px;
+       }
+      #coursework h1{
+          margin-top:20px ;
+      }
+      .wrapper .section .top_navbar{
+          width: 120vw;
+      }
+}
+
+@media screen and (max-width:800px) and (min-width:400px){
+    #infooth2 ul{
+        margin-left: -150px;
+      }
+      #infooth2 ul li{
+          font-size: 15px;
+      }
+      #infooth1 ul{
+          margin-left: -300px;
+      }
+      #infooth1 ul li{
+          font-size: 15px;
+      }
+    .imgdet img{
+        width: 150px;
+    }
+    .wrapper .sidebar{
+        width:300px ;
+    }
+    .wrapper .sidebar ul li a{
+        font-size: 20px;
+       
+    }
+    .wrapper .section{
+        margin-left: 300px;
+    }
+
+    .main_content{
+        width: 50vw;
+        margin-left: 300px;
+        margin-top: -1550px;
+        padding: 30px;
+    }
+
+    h1{
+        font-size: 20px;
+        margin-left: 200px;
+        
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        margin-left: 150px;
+    }
+    .co-column{
+        width: 300px;
+        height: 200px;
+        padding-top: 45px;
+        padding-left: 50px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    
+    }
+
+    .co-column i{
+        margin-right: 50px;
+        margin-top: -30px;
+    }
+    .co-column h2{
+        font-size: 20px;
+    margin-right: 40px;
+    margin-top: 2px;
+    }
+    .mydetailsele{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        margin-left: 280px;
+        margin-bottom: -50px;
+    }
+    .mydetailsele1{
+       width: 300px;
+       height: 80px;
+       margin-top: -20px;
+       height: 80px;
+    }
+    .otherdetailsback{
+        width: 250px;
+        margin-left: -50px;
+        margin-top: 10px;
+    }
+    .detailsback{
+        display: flex;
+        flex-direction: column;
+        margin-left: 150px;
+        margin-right: -10px;
+        margin-top: 30px;
+        padding-right:200px ;
+        margin-bottom: 30px;
+    }
+    .infodet h2{
+        font-size: 15px;
+        margin-left: 150px;
+    }
+    .imgdet img{
+        margin-left: 150px;
+        margin-bottom: 20px;
+    }
+    .infooth{
+        color: black;
+        font-size: 15px;
+        margin-left: 150px;
+    }
+    .infooth h2{
+        font-size: 15px;
+        margin-left: -450px;
+       }
+       .footer{
+        margin-left: 100px;
+        margin-top: 350px;
+       }
+      #coursework h1{
+          margin-top:20px ;
+      }
+      .wrapper .section .top_navbar{
+          width: 120vw;
+      }
+}
+@media screen and (max-width:414px) and (min-width:411px) {
+    .wrapper .section .top_navbar{
+        width: 150vw;
+    }
+}
+
+@media screen and (max-width:1280px) and (min-width:801px){
+    .wrapper .sidebar{
+        width:300px ;
+    }
+    .wrapper .sidebar ul li a{
+        font-size: 20px;
+       
+    }
+    .wrapper .section{
+        margin-left: 300px;
+    }
+
+    .main_content{
+        width: 50vw;
+        margin-left: 300px;
+        margin-top: -1550px;
+        padding: 30px;
+    }
+
+    h1{
+        font-size: 20px;
+        margin-left: 200px;
+        
+    }
+    .row{
+        display: flex;
+        margin-left: 500px;
+    }
+    .co-column{
+        width: 300px;
+        height: 200px;
+        padding-top: 45px;
+        padding-left: 50px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        margin-left: 100px;
+        margin-right: 100px;
+    
+    }
+
+    .co-column i{
+        margin-right: 50px;
+        margin-top: -30px;
+    }
+    .co-column h2{
+        font-size: 20px;
+    margin-right: 40px;
+    margin-top: 2px;
+    }
+    .mydetailsele{
+        display: flex;
+        padding: 30px;
+        margin-left: 480px;
+        margin-bottom: -50px;
+    }
+    .mydetailsele1{
+       width: 400px;
+       height: 80px;
+       margin-top: -20px;
+       height: 80px;
+       padding: 40px;
+    }
+    .otherdetailsback{
+        width: 800px;
+        margin-left: -50px;
+        margin-top: 10px;
+    }
+    .detailsback{
+        display: flex;
+        width: 800px;
+        flex-direction: column;
+        margin-left: 150px;
+        margin-right: -10px;
+        margin-top: 30px;
+        padding-right:200px ;
+        margin-bottom: 30px;
+    }
+    .infodet h2{
+        font-size: 15px;
+        margin-left: 150px;
+    }
+    .imgdet img{
+        margin-left: 150px;
+        margin-bottom: 20px;
+    }
+    .infooth{
+        color: black;
+        font-size: 15px;
+        margin-left: 150px;
+    }
+    .infooth h2{
+        font-size: 15px;
+        margin-left: -450px;
+       }
+       .footer{
+        margin-left: 100px;
+        margin-top: 300px;
+       }
+      #coursework h1{
+          margin-top:20px ;
+      }
+      .wrapper .section .top_navbar{
+          width: 120vw;
+      }
+}
